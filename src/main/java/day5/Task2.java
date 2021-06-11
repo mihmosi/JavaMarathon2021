@@ -7,6 +7,24 @@ package day5;
 
 public class Task2 {
     public static void main(String[] args) {
-
+        Motorbike moto1 = new Motorbike(2020,"red", "Ural");
+        System.out.println("I would have "+moto1.getModel()+" motorbike "+moto1.getColor()+" color "+moto1.getYear()+" year");
     }
+}
+class Motorbike{
+    int year;
+    String color;
+    String model;
+
+    public Motorbike(int year, String color, String model ){
+        this.year = year;
+        this.color = color;
+        this.model = model;
+    }
+
+    public int getYear() { return year; }
+
+    public String getColor() { return color; }
+
+    public String getModel() { return model; }
 }
