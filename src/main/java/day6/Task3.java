@@ -13,8 +13,18 @@ package day6;
  Создайте по 1 экземпляру каждого класса, у преподавателя вызовите метод оценки студента,
  передав студента в качестве аргумента метода.
  */
+import java.util.Arrays;
+import java.util.Random;
+
+import static java.util.Arrays.*;
+
 public class Task3 {
     public static void main(String[] args) {
+        Teacher teacher = new Teacher("Иванов Иван Иванович", "Информатика");
+        Student student = new Student("Сидор Сидоров");
+
+        teacher.evaluate(student);
 
     }
 }
+
