@@ -1,9 +1,10 @@
 package day6;
 
 class Motorbike {
-    int year;
-    String color;
-    String model;
+    private int year;
+    private String color;
+    private String model;
+    int oldest;
 
     public Motorbike(int year, String color, String model ){
         this.year = year;
@@ -17,7 +18,16 @@ class Motorbike {
 
     public String getModel() { return model; }
 
-    void info() {
+    public void info() {
         System.out.println("Это мотоцикл");
+    }
+
+    public int yearDifference(int inputYear) {
+        if (inputYear > year){
+            this.oldest =  inputYear - year;
+        } else {
+            System.out.println("Введите правильный год");
+        }
+        return oldest;
     }
 }

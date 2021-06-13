@@ -1,7 +1,7 @@
 package day6;
 
-class Car {
-    int year;
+public class Car {
+    private int year;
     int oldest;
     private String color;
     private String model;
@@ -32,10 +32,11 @@ class Car {
 
     public int getOldest(){ return oldest; }
 
-    void info() {
-        System.out.print("Это автомобиль ");
+    public void info() {
+        System.out.print("Это автомобиль");
     }
-    int yearDifference(int inputYear) {
+
+    public int yearDifference(int inputYear) {
         if (inputYear > year){
             this.oldest =  inputYear - year;
         } else {

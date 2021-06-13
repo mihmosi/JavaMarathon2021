@@ -12,9 +12,18 @@ public class Task1 {
     public static void main(String[] args) {
         Car car = new Car();
         car.setYear(2005);
+        car.setColor("red");
+        car.setModel("audi");
+
+        Motorbike motorbike = new Motorbike(2008,"black", "kawasaki");
+
         car.info();
         car.oldest = car.getOldest();
         car.yearDifference(2021);
-        if(car.oldest > 0) System.out.print("и ему "+car.oldest+" лет");
+        if(car.oldest > 0) System.out.println(" и ему "+car.oldest+" лет");
+
+        motorbike.info();
+        System.out.println(motorbike.yearDifference(2020));
+
     }
 }

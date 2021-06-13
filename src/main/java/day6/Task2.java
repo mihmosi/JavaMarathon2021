@@ -24,13 +24,15 @@ package day6;
 
 public class Task2 {
     public static void main(String[] args) {
-        Airplane airplane = new Airplane("Boing", 2020, 60, 5000,0);
+        Airplane airplane = new Airplane("Boing", 2010, 30, 40000 );
+
+        airplane.setYear(2015);
+        airplane.setLength(75);
         airplane.info();
         airplane.fillUp(1000);
         airplane.info();
         airplane.setProducer("Airbus");
-        airplane.setYear(2015);
-        airplane.setLength(75);
+
         airplane.setFuel(1500);
         airplane.info();
     }
