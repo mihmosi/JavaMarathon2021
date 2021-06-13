@@ -1,4 +1,5 @@
 package day7;
+
 /**2. Дворовый футбол.
  Для игры в футбол во дворе требуется 6 человек (3х3). Класс Игрок (англ. Player) содержит следующие поля:
          Поле “выносливость” (англ. stamina), разное для каждого экземпляра, инициализируется через конструктор.
@@ -22,6 +23,26 @@ package day7;
  */
 public class Task2 {
     public static void main(String[] args) {
+        Player player1 = new Player(90);
+        Player player2 = new Player(93);
+        Player player3 = new Player(91);
 
+        Player.info();
+
+        Player player4 = new Player(95);
+        Player player5 = new Player(96);
+        Player player6 = new Player(93);
+
+        Player.info();
+
+        Player player7 = new Player(98);
+
+        Player.info();
+
+        for (int i = 0;i < 91;i++)
+        player3.run();
+
+        Player.info();
     }
+
 }
