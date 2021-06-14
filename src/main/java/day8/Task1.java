@@ -11,6 +11,36 @@ package day8;
  задачу этими двумя способами, замеряя время работы программы.*/
 public class Task1 {
     public static void main(String[] args) {
+        String string = "";
+        for(int i = 0;i <= 20000;i++) {
+            string += " " + i;
+        }
+            long startTime = System.currentTimeMillis();
+        System.out.println(string);
+            long endTime = System.currentTimeMillis();
 
+
+            System.out.println("Total execution time: " + (endTime-startTime) + "ms");
+
+
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int j = 0;j <= 20000;j++) {
+            stringBuilder.append(j).append(" ");
+        }
+        long startTime1 = System.currentTimeMillis();
+        System.out.println(stringBuilder.toString());
+        long endTime1 = System.currentTimeMillis();
+
+        System.out.println("Total execution time: " + (endTime1-startTime1) + "ms");
+
+        int strTime = getStrTime(startTime, endTime);
+        int strbTime = getStrTime(startTime1, endTime1);
+        System.out.printf("Difference is %d ms",(strTime - strbTime));
+    }
+
+    private static int getStrTime(long startTime, long endTime) {
+        return (int) (endTime - startTime);
     }
 }
+
