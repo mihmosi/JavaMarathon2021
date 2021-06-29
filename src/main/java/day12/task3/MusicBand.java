@@ -30,8 +30,6 @@ public class MusicBand {
     MusicBand band10 = new MusicBand("Zola", 2003);
 
 
-    List<MusicBand> musicBands = new ArrayList<>(band1, band2, band3, band4, band5, band6, band7, band8, band9, band10);
-
 
 
     public MusicBand(String name, int year) {
